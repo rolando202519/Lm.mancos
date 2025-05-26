@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="CLAN L.M Los mancos">
-    <meta name="Nuestro clan de cod mobile busca como objetivo ,sacar el maximo potencial de cada miembro " content="Clan L.M Los mancos">
-    <title>BABYBLUE </title>
-    <link rel="stylesheet" href="" >
-
-</head>
-           
-
- 
-
-            
-            <!DOCTYPE html>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nuestro clan de COD Mobile busca sacar el máximo potencial de cada miembro." />
+  <title>CLAN L.M - Los Mancos</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            orbitron: ['Orbitron', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
   <style>
     body {
-     background-position: center;
-      background-image: url('https://c.wallhere.com/photos/44/4c/Call_of_Duty_Modern_Warfare_II_Call_of_Duty_ghost_Call_of_Duty_Ghosts_soldier_skull_video_game_characters_red_light-2201319.jpg!d'); /* Fondo camuflado */
+      background-image: url('https://c.wallhere.com/photos/44/4c/Call_of_Duty_Modern_Warfare_II_Call_of_Duty_ghost_Call_of_Duty_Ghosts_soldier_skull_video_game_characters_red_light-2201319.jpg!d');
+      background-position: center;
       background-color: #090202;
-      background-size: contain;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     @keyframes blink {
@@ -32,66 +34,61 @@
     .blink {
       animation: blink 1s infinite;
     }
-
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-    .military-font {
-      font-family: 'Orbitron', sans-serif;
-    }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
 </head>
-<body class="text-white font-sans flex flex-col items-center min-h-screen p-6">
-  <!-- MENÚ -->
-  <nav class="w-full bg-zinc-900 bg-opacity-90 shadow-lg py-4 px-8 flex justify-between items-center border-b border-White-500">
-    <div class="text-2xl military-font text-White-400">SIGUENOS EN NUESTRAS REDES SOCIALES</div>
-    <ul class="flex space-x-6 text-gray-300">
-      
-      <li class="hover:text-yellow-400 cursor-pointer transition">
- <a href="https://www.youtube.com/@LMMancos" target="_blank">YOUTUBE</a>
-</li>
-      <li class="hover:text-yellow-400 cursor-pointer transition">
-  <a href="https://www.twitch.tv/lmbabyblue?sr=a" target="_blank">TWITCH</a>
-</li>
-<li class="hover:text-yellow-400 cursor-pointer transition">
-  <a href="https://www.tiktok.com/@babyblue.41?is_from_webapp=1&sender_device=pc" target="_blank">TIKTOK</a>
-</li>
+<body class="text-white font-sans min-h-screen flex flex-col">
 
+  <!-- NAVBAR -->
+  <nav class="w-full bg-zinc-900 bg-opacity-90 px-6 py-4 shadow-md flex items-center justify-between border-b border-white">
+    <h1 class="text-xl sm:text-2xl font-orbitron text-white">SÍGUENOS EN REDES</h1>
+    <div class="sm:hidden">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <ul id="nav-links" class="hidden sm:flex space-x-6 text-gray-300 text-sm sm:text-base">
+      <li><a href="https://www.youtube.com/@LMMancos" target="_blank" class="hover:text-yellow-400 transition">YOUTUBE</a></li>
+      <li><a href="https://www.twitch.tv/lmbabyblue?sr=a" target="_blank" class="hover:text-yellow-400 transition">TWITCH</a></li>
+      <li><a href="https://www.tiktok.com/@babyblue.41?is_from_webapp=1&sender_device=pc" target="_blank" class="hover:text-yellow-400 transition">TIKTOK</a></li>
     </ul>
   </nav>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="text-center mt-20 px-4">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl military-font text-yellow-400 drop-shadow-lg tracking-wide">
-      しM°Los Mancos 
-    </h1>
-    <p class="text-2xl mt-4 blink font-bold text-red-500">
-      ¡ÚNETE A NOSOTROS!
-    </p>
+  <!-- NAV LINKS FOR MOBILE -->
+  <ul id="mobile-links" class="sm:hidden hidden flex-col space-y-2 bg-zinc-800 bg-opacity-90 px-6 py-4 text-gray-300">
+    <li><a href="https://www.youtube.com/@LMMancos" target="_blank" class="hover:text-yellow-400 transition">YOUTUBE</a></li>
+    <li><a href="https://www.twitch.tv/lmbabyblue?sr=a" target="_blank" class="hover:text-yellow-400 transition">TWITCH</a></li>
+    <li><a href="https://www.tiktok.com/@babyblue.41?is_from_webapp=1&sender_device=pc" target="_blank" class="hover:text-yellow-400 transition">TIKTOK</a></li>
+  </ul>
 
-    <button class="mt-10 bg-yellow-500 hover:bg-yellow-600 text-black py-3 px-8 rounded-xl text-lg font-bold uppercase tracking-wide transition duration-300 shadow-lg"><a href="https://chat.whatsapp.com/I8Ujywum2qm6rX18nUjiyK"_blank">Enlistarse Ahora</a>
-</li>
-      
-    </button>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="flex flex-col items-center justify-center flex-1 px-4 text-center mt-10">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-orbitron text-yellow-400 drop-shadow tracking-wide">しM° Los Mancos</h2>
+    <p class="text-lg sm:text-2xl mt-4 font-bold blink text-red-500">¡ÚNETE A NOSOTROS!</p>
+    
+    <a href="https://chat.whatsapp.com/I8Ujywum2qm6rX18nUjiyK" target="_blank" class="mt-8">
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black py-3 px-6 sm:px-10 rounded-lg text-base sm:text-lg font-bold uppercase tracking-wide transition duration-300 shadow-lg">
+        Enlistarse Ahora
+      </button>
+    </a>
   </main>
 
-
-  
-
-
-  <!-- PIE DE PÁGINA -->
-  <footer class="mt-auto text-center text-sm text-gray-400 pt-20">
-    © 2025 L.M LOS MANCOS - Todos los derechos reservados
+  <footer class="bg-zinc-900 bg-opacity-80 w-full text-center py-4 text-xs text-gray-400 mt-auto">
+    &copy; 2025 Clan L.M - Los Mancos. Todos los derechos reservados.
   </footer>
+
+  <script>
+    // Mostrar/ocultar menú en móviles
+    const toggle = document.getElementById('menu-toggle');
+    const mobileLinks = document.getElementById('mobile-links');
+
+    toggle.addEventListener('click', () => {
+      mobileLinks.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-  
-
-
-
-
-
-
-
