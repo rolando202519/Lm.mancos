@@ -85,6 +85,7 @@
 
   <footer class="bg-zinc-900 bg-opacity-80 w-full text-center py-4 text-xs text-gray-400 mt-auto">
     &copy; 2025 Clan L.M - Los Mancos. Todos los derechos reservados.
+    Rolando Lopez
   </footer>
 
   <script>
@@ -96,5 +97,33 @@
       mobileLinks.classList.toggle('hidden');
     });
   </script>
+</body>
+</html>
+
+<body>
+
+  
+  <p>Haz clic en el botón para activar la música 🎶</p>
+  <button id="playBtn">▶️ Activar Música</button>
+
+  <iframe id="ytplayer" width="0" height="0"
+    src=""
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    const btn = document.getElementById('playBtn');
+    const iframe = document.getElementById('ytplayer');
+
+    btn.addEventListener('click', () => {
+      // Cargar el video de YouTube con autoplay
+      iframe.src = "https://www.youtube.com/embed/NT4eF9YsYnM?autoplay=1&loop=1&playlist=NT4eF9YsYnM";
+      btn.disabled = true;
+      btn.innerText = "🎵 Música Activada";
+    });
+  </script>
+
 </body>
 </html>
